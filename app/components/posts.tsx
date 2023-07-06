@@ -6,13 +6,13 @@ export default function Posts() {
   console.log(posts);
 
   return (
-    <section className="mt-6 mx-auto max-w-2xl">
+    <section className="mt-6  max-w-2xl">
       <h2 className="text-4xl font-bold dark:text-white/90">Blog</h2>
-      <ul className="w-full">
+      <div className="w-full">
         {posts.map((post) => (
           <ListItem key={post.id} post={post} />
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
