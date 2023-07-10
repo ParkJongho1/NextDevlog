@@ -3,7 +3,6 @@ import ListItem from "./ListItem";
 
 export default function Posts() {
    const posts = getSortedPostsData();
-   console.log(posts);
 
    return (
       <section className="max-w-2xl mt-6">
