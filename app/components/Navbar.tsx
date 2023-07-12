@@ -13,10 +13,10 @@ export default function Navbar() {
                <Link href="/" className="pr-5 no-underline text-[#ffffff]">
                   blog
                </Link>
-               <Link href="/" className="pr-5 no-underline text-[#ffffff]">
+               <Link href="/about" className="pr-5 no-underline text-[#ffffff]">
                   about
                </Link>
-               <Link href="/" className="pr-5 no-underline text-[#ffffff]">
+               <Link href="https://github.com/ParkJongho1" target="_blank" className="pr-5 no-underline text-[#ffffff]">
                   git
                </Link>
             </div>
