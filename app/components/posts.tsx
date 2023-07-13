@@ -5,13 +5,13 @@ export default function Posts() {
    const posts = getSortedPostsData();
 
    return (
-      <section className="max-w-2xl mt-6">
+      <section className="w-full mt-6">
          <h2 className="text-4xl font-bold dark:text-white/90">Blog</h2>
-         <div className="w-full">
+         <ul className="flex flex-wrap">
             {posts.map((post) => (
                <ListItem key={post.id} post={post} />
             ))}
-         </div>
+         </ul>
       </section>
    );
 }
