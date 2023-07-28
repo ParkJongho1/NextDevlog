@@ -3194,7 +3194,12 @@
     "@contentlayer/core" "0.3.4"
     "@contentlayer/utils" "0.3.4"
 
-"next@^12 || ^13", "next@13.4.7":
+"next-themes@^0.2.1":
+  "integrity" "sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A=="
+  "resolved" "https://registry.npmjs.org/next-themes/-/next-themes-0.2.1.tgz"
+  "version" "0.2.1"
+
+"next@*", "next@^12 || ^13", "next@13.4.7":
   "integrity" "sha512-M8z3k9VmG51SRT6v5uDKdJXcAqLzP3C+vaKfLIAM0Mhx1um1G7MDnO63+m52qPdZfrTFzMZNzfsgvm3ghuVHIQ=="
   "resolved" "https://registry.npmjs.org/next/-/next-13.4.7.tgz"
   "version" "13.4.7"
