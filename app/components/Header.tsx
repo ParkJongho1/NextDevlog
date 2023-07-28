@@ -33,14 +33,14 @@ export default function Header() {
       <nav className="sticky top-0 z-10 max-w-3xl p-4 mx-auto lg:max-w-6xl">
          <div className="flex justify-between">
             <div>
-               <Link href="/" className="italic no-underline text-[#8effb7]">
+               <Link href="/" className="italic no-underline blog_name">
                   Devlog
                </Link>
             </div>
             <div>
                {darkTheme !== undefined && (
-                  <button onClick={handleToggle} className="mr-5">
-                     {darkTheme ? "light-mode" : "dark-mode"}
+                  <button onClick={handleToggle} className="mr-5" style={{ background: "none" }}>
+                     {darkTheme ? "light" : "dark"}
                   </button>
                )}
                <Link href="/" className="pr-5 no-underline">

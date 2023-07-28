@@ -136,6 +136,7 @@ table {
    --color-button-text: rgb(255, 255, 255);
    --color-background: #fff;
    --color-anchor: #000aff;
+   --color-headername: #009336;
 }
 
 [data-theme="dark"] {
@@ -145,6 +146,7 @@ table {
    --color-paragraph: #8a8a8a;
    --color-button-text: rgb(0, 0, 0);
    --color-background: #000;
+   --color-headername: #8effb7;
 }
 
 * {
@@ -166,9 +168,10 @@ body {
    transition: background 0.3s ease;
 }
 
-h1,
-h3,
-p {
-   margin: 0;
-   padding: 0;
+.blog_name {
+   color: var(--color-headername);
+}
+
+.footerfill {
+   fill: var(--color-primary);
 }
