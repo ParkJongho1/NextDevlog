@@ -30,7 +30,7 @@ export default function Header() {
    }, []);
 
    return (
-      <nav className="sticky top-0 z-10 max-w-3xl p-4 mx-auto lg:max-w-6xl">
+      <nav className="sticky top-0 z-10 max-w-3xl p-4 mx-auto lg:max-w-6xl backdrop-blur-md">
          <div className="flex justify-between">
             <div>
                <Link href="/" className="italic no-underline blog_name">
