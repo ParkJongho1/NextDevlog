@@ -50,6 +50,7 @@ export async function getPostData(id: string) {
       id,
       title: matterResult.data.title,
       date: matterResult.data.date,
+      description: matterResult.data.description,
       contentHtml,
    };
 

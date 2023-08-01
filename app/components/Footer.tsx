@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
    return (
-      <footer className="flex flex-col items-center max-w-3xl mx-auto mt-10 lg:max-w-6xl">
+      <footer className="flex flex-col items-center max-w-3xl px-6 mx-auto mt-10 lg:max-w-6xl">
          <hr className="w-full mt-2 transition-all border-1 border-neutral-300 dark:border-neutral-700"></hr>
          <div className="mt-5">
             <ul className="flex items-center justify-center space-x-2 ma-auto">
