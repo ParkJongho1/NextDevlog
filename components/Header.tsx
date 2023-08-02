@@ -43,7 +43,7 @@ export default function Header() {
                      {darkTheme ? "light" : "dark"}
                   </button>
                )}
-               <Link href="/" className="pr-5 no-underline">
+               <Link href="/posts" className="pr-5 no-underline">
                   blog
                </Link>
                <Link href="/about" className="pr-5 no-underline">

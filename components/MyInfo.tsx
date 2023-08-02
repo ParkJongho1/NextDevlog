@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MyInfo() {
    return (
       <section>
-         <h1 className="mb-5 text-4xl font-extrabold">HoJong` Devlog</h1>
+         <h1 className="mb-5 text-4xl font-extrabold gradientText gradientAni">HoJong` Devlog</h1>
          <p className="mb-3 text-2xl">Frontend Developer</p>
          <div className="mb-3">
             <span>Tech Stack</span>{" "}
