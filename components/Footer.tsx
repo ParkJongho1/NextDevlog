@@ -41,7 +41,7 @@ export default function Footer() {
                   </Link>
                </li>
             </ul>
-            <p className="mt-2 text-sm">Copyright &copy; {new Date().getFullYear()} by JHPark</p>
+            <p className="mt-2 text-sm">Copyright &copy; {new Date().getFullYear()} by jh_Park</p>
          </div>
       </footer>
    );

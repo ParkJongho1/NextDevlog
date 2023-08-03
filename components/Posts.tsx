@@ -1,17 +1,26 @@
-import { getSortedPostsData } from "@/lib/post";
-import ListItem from "./ListItem";
+import { Post } from '@/.contentlayer/generated';
 
-export default function Posts() {
-   const posts = getSortedPostsData();
+import ListItem from './ListItem';
 
-   return (
-      <section className="w-full mt-6">
-         <h2 className="text-4xl font-bold">Blog</h2>
-         <ul className="">
-            {posts.map((post) => (
-               <ListItem key={post.id} post={post} />
-            ))}
-         </ul>
-      </section>
-   );
+interface RecentPostsProps {
+  posts: Post[];
+}
+
+export default function Posts({ posts }: RecentPostsProps) {
+  return (
+    <section className="w-full mt-6">
+      <h2 className="text-4xl font-bold">Blog</h2>
+      <ul className="">
+        {posts.map((post: Post) => (
+          <ListItem
+            key={post._id}
+            date={post.date}
+            title={post.title}
+            description={post.description}
+            slug={post._raw.flattenedPath}
+          />
+        ))}
+      </ul>
+    </section>
+  );
 }
