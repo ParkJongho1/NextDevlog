@@ -83,12 +83,12 @@ time,
 mark,
 audio,
 video {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   font-size: 100%;
-   font: inherit;
-   vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,94 +102,107 @@ hgroup,
 menu,
 nav,
 section {
-   display: block;
+  display: block;
 }
 body {
-   line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-   list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-   quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-   content: "";
-   content: none;
+  content: '';
+  content: none;
 }
 table {
-   border-collapse: collapse;
-   border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* darkmode settings */
 :root {
-   --color-primary-accent: #2614c7;
-   --color-primary: #000;
-   --color-button: #3d486c;
-   --color-paragraph: #797979;
-   --color-button-text: rgb(255, 255, 255);
-   --color-background: #fff;
-   --color-anchor: #000aff;
-   --color-headername: #009336;
+  --color-primary-accent: #2614c7;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-anchor: #000aff;
+  --color-headername: #009336;
 }
 
-[data-theme="dark"] {
-   --color-primary-accent: #00ff4c;
-   --color-primary: #fff;
-   --color-button: #00ff4c;
-   --color-paragraph: #8a8a8a;
-   --color-button-text: rgb(0, 0, 0);
-   --color-background: #000;
-   --color-headername: #8effb7;
+[data-theme='dark'] {
+  --color-primary-accent: #00ff4c;
+  --color-primary: #fff;
+  --color-button: #00ff4c;
+  --color-paragraph: #8a8a8a;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #000;
+  --color-headername: #8effb7;
 }
 
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* 버튼과 바디 등 필요한 변수들을 설정해줌으로써 값 지정해주기  */
 button {
-   background-color: var(--color-background);
-   color: var(--color-primary);
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
 
 body {
-   width: 100vw;
-   height: 100vh;
-   overflow: scroll;
-   margin: 0;
-   background-color: var(--color-background);
-   color: var(--color-primary);
-   transition: background 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  transition: background 0.3s ease;
 }
 
 .blog_name {
-   color: var(--color-headername);
+  color: var(--color-headername);
 }
 
 .footerfill {
-   fill: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+.serch_input {
+  background-color: var(--color-headername);
 }
 
 .gradientText {
-   background-image: linear-gradient(-225deg, #3c2395, #44107a 17%, #ff1361 33%, #fff800 50%, #ff1361 66%, #44107a 83%, #3c2395);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-size: 200% auto;
+  background-image: linear-gradient(
+    -225deg,
+    #3c2395,
+    #44107a 17%,
+    #ff1361 33%,
+    #fff800 50%,
+    #ff1361 66%,
+    #44107a 83%,
+    #3c2395
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
 }
 
 .gradientAni {
-   animation: bg-gradient 3s linear infinite;
+  animation: bg-gradient 3s linear infinite;
 }
 
 @keyframes bg-gradient {
-   100% {
-      background-position: 200%;
-   }
+  100% {
+    background-position: 200%;
+  }
 }

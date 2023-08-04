@@ -24,10 +24,8 @@ export default async function Post({ params }: { params: { slug: string } }) {
       <h1 className="max-w-3xl mx-auto mt-5 mb-4 text-3xl font-extrabold tracking-tight text-center sm:text-5xl">
         {post.title}
       </h1>
-
       <p className="w-full mt-2 text-xs text-center md:flex-row md:items-center">{formatDate}</p>
       <hr className="w-full mt-2 transition-all border-1 border-neutral-300 dark:border-neutral-700"></hr>
-
       <MDXComponent />
     </main>
   );

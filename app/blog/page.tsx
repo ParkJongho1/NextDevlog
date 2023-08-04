@@ -18,8 +18,7 @@ export default function Post() {
 
   return (
     <div className="max-w-3xl pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl">
-
-      <div className="flex items-center w-full h-16 gap-4 px-4 border-2 border-black flex-nowrap rounded-2xl dark:border-white">
+      <div className="flex items-center w-full h-16 gap-4 px-4 border-2 border-black flex-nowrap rounded-2xl dark:border-white serch_input">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
