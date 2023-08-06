@@ -17,8 +17,8 @@ export default function Post() {
   };
 
   return (
-    <div className="max-w-3xl pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl">
-      <div className="flex items-center w-full h-16 gap-4 px-4 border-2 border-black flex-nowrap rounded-2xl dark:border-white serch_input">
+    <div className="max-w-3xl pt-20 pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl">
+      <div className="flex items-center w-full h-16 gap-4 px-4 flex-nowrap rounded-2xl serch_input">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -35,7 +35,7 @@ export default function Post() {
         </svg>
         <input
           type="text"
-          className="flex-1 bg-transparent outline-none appearance-none"
+          className="flex-1 bg-transparent outline-none appearance-none serch_placeholder"
           onChange={handleSearch}
           placeholder="검색하기"
         />

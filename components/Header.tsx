@@ -30,8 +30,8 @@ export default function Header() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-10 max-w-3xl p-4 mx-auto lg:max-w-6xl backdrop-blur-md">
-      <div className="flex justify-between">
+    <nav className="fixed top-0 left-0 z-10 w-full p-4 mx-auto backdrop-blur-md">
+      <div className="flex items-center justify-between max-w-3xl mx-auto lg:max-w-6xl">
         <div>
           <Link href="/" className="italic no-underline blog_name">
             Devlog
