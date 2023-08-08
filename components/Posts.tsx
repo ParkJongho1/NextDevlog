@@ -16,6 +16,7 @@ export default function Posts({ posts }: RecentPostsProps) {
             key={post._id}
             date={post.date}
             title={post.title}
+            category={post.category}
             description={post.description}
             slug={post._raw.flattenedPath}
           />

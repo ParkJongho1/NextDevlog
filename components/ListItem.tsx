@@ -1,15 +1,15 @@
 import Link from 'next/link';
-
 import dayjs from 'dayjs';
 
 interface BlogPostProps {
   date: string;
   title: string;
+  category: string;
   description: string;
   slug: string;
 }
 // export default function ListItem({ post }: Props) {
-export default function ListItem({ date, title, description, slug }: BlogPostProps) {
+export default function ListItem({ date, title, category, description, slug }: BlogPostProps) {
   // const { id, title, description, date } = post;
   // const formattedDate = getFormattedDate(date);
   const formatDate = dayjs(date).format('YYYY.MM.DD');
