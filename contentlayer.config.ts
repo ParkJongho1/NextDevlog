@@ -49,8 +49,8 @@ const contentSource = makeSource({
         {
           theme: 'github-dark',
         },
+        highlight,
       ],
-      highlight,
     ],
   },
 });
