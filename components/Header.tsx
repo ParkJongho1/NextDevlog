@@ -46,13 +46,7 @@ export default function Header() {
           <Link href="/about" className="pr-5 no-underline">
             about
           </Link>
-          <Link
-            href="https://github.com/ParkJongho1"
-            target="_blank"
-            className="pr-5 mr-2 no-underline"
-          >
-            git
-          </Link>
+
           {darkTheme !== undefined && (
             <button onClick={handleToggle} className="mr-5" style={{ background: 'none' }}>
               {darkTheme ? (
