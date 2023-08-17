@@ -8,8 +8,7 @@ interface RecentPostsProps {
 
 export default function Posts({ posts }: RecentPostsProps) {
   return (
-    <section className="w-full mt-6">
-      <h2 className="pt-5 text-5xl font-bold">Recent Posts</h2>
+    <section className="w-full">
       <ul className="">
         {posts.map((post: Post) => (
           <ListItem

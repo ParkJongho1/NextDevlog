@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className="max-w-3xl pt-20 pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl">
       <MyInfo />
+      <h2 className="pt-5 text-5xl font-extrabold">Recent Posts</h2>
       <Posts posts={posts} />
     </main>
   );
