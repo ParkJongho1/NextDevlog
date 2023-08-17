@@ -1,0 +1,53 @@
+/* darkmode settings */
+:root {
+  --color-primary-accent: #2614c7;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-reverse: #000;
+  --color-anchor: #000aff;
+  --color-headername: #009336;
+}
+
+[data-theme='dark'] {
+  --color-primary-accent: #00ff4c;
+  --color-primary: #fff;
+  --color-button: #00ff4c;
+  --color-paragraph: #493939;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #000;
+  --color-reverse: #fff;
+  --color-headername: #8effb7;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 버튼과 바디 등 필요한 변수들을 설정해줌으로써 값 지정해주기  */
+button {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+}
+
+body {
+  overflow: scroll;
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  transition: background 0.3s ease;
+}
+
+.blog_name {
+  color: var(--color-headername);
+}
+
+.footerfill {
+  fill: var(--color-primary);
+}
+
+.serch_input {
+  /* background-color: var(--color-headername); */
+  border: 3px solid var(--color-reverse);
+}

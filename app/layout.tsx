@@ -12,12 +12,6 @@ export const metadata = {
   description: 'Create by ParkJongho',
 };
 
-const themeInitializerScript = `(function() {
-   ${setInitialColorMode.toString()}
-   setInitialColorMode();
- })()
- `;
-
 // 초기 테마를 설정하는 함수
 function setInitialColorMode() {
   function getInitialColorMode() {
@@ -36,17 +30,23 @@ function setInitialColorMode() {
       return preference.matches ? 'dark' : 'light';
     }
 
-    return 'light';
+    return 'dark';
   }
 
   //현재 테마 모드
   const currentColorMode = getInitialColorMode();
   const element = document.body;
+  element.className = currentColorMode;
   element.style.setProperty('--initial-color-mode', currentColorMode);
-
   // 현재 다크모드라면 다크모드를 바로 적용 시켜줌
   if (currentColorMode === 'dark') document.body.setAttribute('data-theme', 'dark');
 }
+
+const themeInitializerScript = `(function() {
+  ${setInitialColorMode.toString()}
+  setInitialColorMode();
+})()
+`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: themeInitializerScript,
           }}
         ></script>
+
         <Header />
         {children}
         <Footer />

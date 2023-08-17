@@ -14,9 +14,11 @@ export default function Header() {
     if (darkTheme !== undefined) {
       if (darkTheme) {
         document.body.setAttribute('data-theme', 'dark');
+        document.body.className = 'dark';
         window.localStorage.setItem('theme', 'dark');
       } else {
         document.body.removeAttribute('data-theme');
+        document.body.className = 'light';
         window.localStorage.setItem('theme', 'light');
       }
     }

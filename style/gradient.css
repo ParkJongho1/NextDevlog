@@ -1,0 +1,26 @@
+.gradientText {
+  background-image: linear-gradient(
+    -225deg,
+    #3c2395,
+    #44107a 17%,
+    #ff1361 33%,
+    #fff800 50%,
+    #ff1361 66%,
+    #44107a 83%,
+    #3c2395
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+}
+
+.gradientAni {
+  animation: bg-gradient 3s linear infinite;
+}
+
+@keyframes bg-gradient {
+  100% {
+    background-position: 200%;
+  }
+}
