@@ -43,6 +43,15 @@ body {
   color: var(--color-headername);
 }
 
+.blog_title {
+  color: #655656;
+}
+.blog_desc {
+  color: #696161;
+}
+.blog_time {
+  color: #7c7979;
+}
 .footerfill {
   fill: var(--color-primary);
 }

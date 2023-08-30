@@ -15,9 +15,9 @@ export default function ListItem({ date, title, category, description, slug }: B
   const formatDate = dayjs(date).format('YYYY.MM.DD');
   return (
     <Link className="p-4 m-5 text-2xl" href={`/blog/${slug}`}>
-      <p className="font-extrabold ">{title}</p>
-      <p className="mt-1 text-lg">{description}</p>
-      <p className="mt-1 text-sm">{formatDate}</p>
+      <p className="font-extrabold blog_title">{title}</p>
+      <p className="mt-1 text-lg blog_desc">{description}</p>
+      <p className="mt-1 text-sm blog_time">{formatDate}</p>
     </Link>
   );
 }
