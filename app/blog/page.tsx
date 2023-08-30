@@ -38,7 +38,7 @@ export default function Post() {
           type="text"
           className="flex-1 bg-transparent outline-none appearance-none serch_placeholder"
           onChange={handleSearch}
-          placeholder="검색하기"
+          placeholder="포스트 제목 검색"
         />
       </div>
       <Posts

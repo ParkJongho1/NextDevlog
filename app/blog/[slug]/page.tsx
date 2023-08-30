@@ -21,7 +21,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const MDXComponent = getMDXComponent(post?.body.code);
   return (
     <main className="max-w-3xl px-6 pt-20 mx-auto prose dark:prose-invert lg:max-w-6xl">
-      <h1 className="max-w-3xl mx-auto mt-5 mb-4 text-3xl font-extrabold tracking-tight text-center sm:text-5xl">
+      <h1 className="max-w-3xl mx-auto mt-5 mb-4 font-extrabold tracking-tight text-center sm:text-4xl">
         {post.title}
       </h1>
       <p className="w-full mt-2 text-xs text-center md:flex-row md:items-center">{formatDate}</p>
