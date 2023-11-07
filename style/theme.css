@@ -25,7 +25,7 @@
 * {
   box-sizing: border-box;
 }
-/* 버튼과 바디 등 필요한 변수들을 설정해줌으로써 값 지정해주기  */
+/* 버튼과 바디 등 필요한 색상 변수로 지정 색상값 지정해주기  */
 button {
   background-color: var(--color-background);
   color: var(--color-primary);
