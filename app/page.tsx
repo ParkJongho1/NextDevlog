@@ -9,7 +9,7 @@ export default function Home() {
     .sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
     .slice(0, 5);
   return (
-    <main className="max-w-3xl pt-20 pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl">
+    <main className="w-full max-w-3xl pt-20 pl-4 pr-4 mx-auto mt-5 lg:max-w-6xl grow">
       <MyInfo />
       <h2 className="pt-5 text-5xl font-extrabold">Recent Posts</h2>
       <Posts posts={posts} />

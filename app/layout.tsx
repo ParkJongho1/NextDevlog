@@ -57,10 +57,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: themeInitializerScript,
           }}
         ></script>
-
-        <Header />
-        {children}
-        <Footer />
+        <div className="flex flex-col w-full min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
