@@ -51,7 +51,7 @@ const themeInitializerScript = `(function() {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body>
+      <body suppressHydrationWarning>
         <script
           dangerouslySetInnerHTML={{
             __html: themeInitializerScript,
