@@ -40,9 +40,9 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex items-center">
-          <Link href="/blog" className="pr-5 no-underline">
+          {/* <Link href="/blog" className="pr-5 no-underline">
             blog
-          </Link>
+          </Link> */}
           <Link href="/about" className="pr-5 no-underline">
             about
           </Link>
