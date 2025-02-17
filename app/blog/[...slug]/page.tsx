@@ -4,17 +4,23 @@ import dayjs from 'dayjs';
 
 import { notFound } from 'next/navigation';
 
-export const generateStaticParams = async () =>
-  allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
+type Props = {
+  params: { slug: string[] };
+};
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug);
+export const generateStaticParams = async () =>
+  allPosts.map((post) => [{ slug: post._raw.flattenedPath }]);
+
+export const generateMetadata = ({ params }: Props) => {
+  const pagePath = params.slug.join('/');
+  const post = allPosts.find((_) => _.pathSegments.map((_) => _.pathName).join('/') === pagePath)!;
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
   return { title: post.title };
 };
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const post = allPosts.find((post) => post._raw.flattenedPath === params.slug);
+export default async function Post({ params }: Props) {
+  const pagePath = params.slug.join('/');
+  const post = allPosts.find((_) => _.pathSegments.map((_) => _.pathName).join('/') === pagePath)!;
   if (!post) notFound();
 
   const formatDate = dayjs(post.date).format('YYYY.MM.DD');
