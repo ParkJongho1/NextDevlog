@@ -21,10 +21,12 @@ export const generateMetadata = ({ params }: Props) => {
 export default async function Post({ params }: Props) {
   const pagePath = params.slug.join('/');
   const post = allPosts.find((_) => _.pathSegments.map((_) => _.pathName).join('/') === pagePath)!;
+
   if (!post) notFound();
 
   const formatDate = dayjs(post.date).format('YYYY.MM.DD');
   const MDXComponent = getMDXComponent(post?.body.code);
+
   return (
     <main className="max-w-3xl px-6 pt-20 mx-auto prose dark:prose-invert lg:max-w-6xl">
       <h1 className="max-w-3xl mx-auto mt-5 mb-4 font-extrabold tracking-tight text-center sm:text-4xl">
