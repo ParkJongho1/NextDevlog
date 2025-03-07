@@ -13,7 +13,9 @@ export const generateStaticParams = async () =>
 
 export const generateMetadata = ({ params }: Props) => {
   const pagePath = params.slug.join('/');
-  const post = allPosts.find((_) => _.pathSegments.map((_) => _.pathName).join('/') === pagePath)!;
+  const post = allPosts.find(
+    (_) => _.pathSegments.map((_: any) => _.pathName).join('/') === pagePath,
+  )!;
   if (!post) throw new Error(`Post not found for slug: ${params.slug}`);
   return { title: post.title };
 };
